@@ -37,9 +37,9 @@ def _remove_noise_str(input_text: str):
 
 lookup_dict = {"rt":"retweet", "dm":"direct message", "awsm":"awesome", "luv":"love", "#":"hashtag:", "@":"accountlink:"}
 
-def _clean_punctuation(word_array):
-    for i in range(len(word_array)):
-        if word_array[i]
+#def _clean_punctuation(word_array):
+#    for i in range(len(word_array)):
+#        if word_array[i]
 
 def _lookup_words(input_text):
     words = input_text.split()
