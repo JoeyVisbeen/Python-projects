@@ -23,7 +23,7 @@ def predict_single_loop(x, w, b):
     for i in range(n):
         # for each item in the array of x and w multiply
         p_i = x[i] * w[i]
-        p = p + p_i
+        p += p_i
     p += b # add the bias
     return p
 

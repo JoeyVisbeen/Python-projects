@@ -16,7 +16,8 @@ collection_info = client.get_collection(collection_name=my_collection)
 #    print(i)
 
 data = np.random.uniform(low=-1.0 ,high=1.0 ,size=(1_000, 100))
-#print(data)
+print(data)
+
 type(data[0,0]), data[:2, :20]
 
 #for i in range(len(data[0])):
@@ -39,4 +40,3 @@ retrieved = client.retrieve(
     with_vectors=True
 )
 #print(retrieved[0])
-

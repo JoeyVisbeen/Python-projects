@@ -24,8 +24,8 @@ client = weaviate.Client(
     }
 )
 
-#meta_info = client.get_meta()
-#print(json.dumps(meta_info, indent=2))
+meta_info = client.get_meta()
+print(json.dumps(meta_info, indent=2))
 
 #ask = {
 #    "question": "", 
