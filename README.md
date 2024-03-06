@@ -1,5 +1,5 @@
 # 🐍 Python-projects
-This is a pesonal storage for python project.  
+This is a pesonal storage for python projects.  
 
 Running scripts using the ```python3``` command  
 
