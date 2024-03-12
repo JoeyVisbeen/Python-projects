@@ -1,0 +1,28 @@
+<schema name="db" version="1.1">
+
+    <types>
+        <fieldType name="string" class="solr.StrField" sortMissingLast="true" omitNorms="true"/>
+        <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true" omitNorms="true"/>
+        <fieldType name="integer" class="solr.IntField" omitNorms="true"/>
+        <fieldType name="double" class="solr.DoubleField" omitNorms="true"/>
+        <fieldType name="knn_vector" class="solr.DenseVectorField" vectorDimension="768" 
+            similarityFunction="cosine"  knnAlgorithm="hnsw" hnswMaxConnections="10" hnswBeamWidth="40"/>
+    </types>
+
+    <fields>
+        <field name="title" type="string" indexed="true" stored="true" multiValued="false"/>
+        <field name="imgUrl" type="string" indexed="true" stored="true" multiValued="false"/>
+        <field name="productUrl" type="string" indexed="true" stored="true" multiValued="false"/>
+        <field name="stars" type="double" indexed="true" stored="true" multiValued="false"/>
+        <field name="reviews" type="integer" indexed="true" stored="true" multiValued="false"/>
+        <field name="price" type="double" indexed="true" stored="true" multiValued="false"/>
+        <field name="listprice" type="double" indexed="true" stored="true" multiValued="false"/>
+        <field name="categoryName" type="string" indexed="true" stored="true" multiValued="false"/>
+        <field name="isBestSeller" type="boolean" indexed="true" stored="true" multiValued="false"/>
+        <field name="boughtLastMonth" type="integer" indexed="true" stored="true" multiValued="false"/>
+        <field name="bert_vector" type="knn_vector" indexed="true" stored="true"/>
+    </fields>    
+
+</schema>
+
+ 
